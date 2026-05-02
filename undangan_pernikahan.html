@@ -25,7 +25,7 @@
   html { scroll-behavior: smooth; }
 
   body {
-    background: #1A3528;
+    background: var(--cream);
     font-family: 'Cormorant Garamond', serif;
     color: var(--text-dark);
     overflow-x: hidden;
@@ -33,8 +33,8 @@
 
   /* ========== BATIK PATTERN SVG ========== */
   .batik-bg {
-    background-color: #1A3528;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cg fill='none' stroke='%23C9A84C' stroke-width='0.4' opacity='0.25'%3E%3Ccircle cx='40' cy='40' r='30'/%3E%3Ccircle cx='40' cy='40' r='20'/%3E%3Ccircle cx='40' cy='40' r='10'/%3E%3Cpath d='M10 40 Q25 25 40 10 Q55 25 70 40 Q55 55 40 70 Q25 55 10 40Z'/%3E%3Ccircle cx='0' cy='0' r='10'/%3E%3Ccircle cx='80' cy='0' r='10'/%3E%3Ccircle cx='0' cy='80' r='10'/%3E%3Ccircle cx='80' cy='80' r='10'/%3E%3C/g%3E%3C/svg%3E");
+    background-color: var(--cream);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cg fill='none' stroke='%23C9A84C' stroke-width='0.4' opacity='0.15'%3E%3Ccircle cx='40' cy='40' r='30'/%3E%3Ccircle cx='40' cy='40' r='20'/%3E%3Ccircle cx='40' cy='40' r='10'/%3E%3Cpath d='M10 40 Q25 25 40 10 Q55 25 70 40 Q55 55 40 70 Q25 55 10 40Z'/%3E%3Ccircle cx='0' cy='0' r='10'/%3E%3Ccircle cx='80' cy='0' r='10'/%3E%3Ccircle cx='0' cy='80' r='10'/%3E%3Ccircle cx='80' cy='80' r='10'/%3E%3C/g%3E%3C/svg%3E");
   }
 
   /* ========== COVER SECTION ========== */
@@ -46,14 +46,14 @@
     justify-content: center;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(160deg, #0C2018 0%, #1A3528 40%, #0C2018 100%);
+    background: linear-gradient(160deg, #F5EDD3 0%, #FDF6E3 40%, #F5EDD3 100%);
   }
 
   #cover::before {
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cg fill='none' stroke='%23C9A84C' stroke-width='0.5' opacity='0.15'%3E%3Ccircle cx='60' cy='60' r='50'/%3E%3Ccircle cx='60' cy='60' r='35'/%3E%3Ccircle cx='60' cy='60' r='20'/%3E%3Cpath d='M10 60 Q35 35 60 10 Q85 35 110 60 Q85 85 60 110 Q35 85 10 60Z'/%3E%3Cpath d='M30 60 Q45 45 60 30 Q75 45 90 60 Q75 75 60 90 Q45 75 30 60Z'/%3E%3Ccircle cx='0' cy='0' r='15'/%3E%3Ccircle cx='120' cy='0' r='15'/%3E%3Ccircle cx='0' cy='120' r='15'/%3E%3Ccircle cx='120' cy='120' r='15'/%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cg fill='none' stroke='%23C9A84C' stroke-width='0.5' opacity='0.25'%3E%3Ccircle cx='60' cy='60' r='50'/%3E%3Ccircle cx='60' cy='60' r='35'/%3E%3Ccircle cx='60' cy='60' r='20'/%3E%3Cpath d='M10 60 Q35 35 60 10 Q85 35 110 60 Q85 85 60 110 Q35 85 10 60Z'/%3E%3Cpath d='M30 60 Q45 45 60 30 Q75 45 90 60 Q75 75 60 90 Q45 75 30 60Z'/%3E%3Ccircle cx='0' cy='0' r='15'/%3E%3Ccircle cx='120' cy='0' r='15'/%3E%3Ccircle cx='0' cy='120' r='15'/%3E%3Ccircle cx='120' cy='120' r='15'/%3E%3C/g%3E%3C/svg%3E");
     pointer-events: none;
   }
 
@@ -408,7 +408,7 @@
     top: 0; bottom: 0;
     width: 50%;
     z-index: 10;
-    background-color: #1A3528;
+    background-color: var(--cream);
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cg fill='none' stroke='%23C9A84C' stroke-width='0.5' opacity='0.2'%3E%3Ccircle cx='40' cy='40' r='30'/%3E%3Ccircle cx='40' cy='40' r='20'/%3E%3Ccircle cx='40' cy='40' r='10'/%3E%3Cpath d='M10 40 Q25 25 40 10 Q55 25 70 40 Q55 55 40 70 Q25 55 10 40Z'/%3E%3Ccircle cx='0' cy='0' r='10'/%3E%3Ccircle cx='80' cy='0' r='10'/%3E%3Ccircle cx='0' cy='80' r='10'/%3E%3Ccircle cx='80' cy='80' r='10'/%3E%3C/g%3E%3C/svg%3E");
     transition: transform 1.5s cubic-bezier(0.86, 0, 0.07, 1);
   }
@@ -483,9 +483,8 @@
   }
 
   .section-dark {
-    color: #ffffff;
-    background: linear-gradient(160deg, #0C2018, #1A3528 50%, #0C2018);
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Cg fill='none' stroke='%23C9A84C' stroke-width='0.4' opacity='0.12'%3E%3Ccircle cx='40' cy='40' r='30'/%3E%3Ccircle cx='40' cy='40' r='20'/%3E%3Cpath d='M10 40 Q25 25 40 10 Q55 25 70 40 Q55 55 40 70 Q25 55 10 40Z'/%3E%3C/g%3E%3C/svg%3E");
+    color: var(--text-dark);
+    background: var(--cream);
   }
 
   .section-padding { padding: 80px 24px; }
@@ -794,7 +793,7 @@
   }
 
   .map-address {
-    background: #1A3528;
+    background: var(--cream);
     padding: 20px 24px;
     display: flex;
     align-items: center;
@@ -896,7 +895,7 @@
   .btn-submit {
     width: 100%;
     padding: 15px;
-    background: #1A3528;
+    background: var(--cream);
     color: var(--gold-light);
     border: none;
     border-radius: 10px;
@@ -1016,7 +1015,7 @@
     transition: all 0.3s;
     border-radius: 2px;
   }
-  .btn-gift:hover { background: #1A3528; }
+  .btn-gift:hover { background: var(--cream); }
 
   .gift-cards {
     max-width: 520px;
@@ -1110,7 +1109,7 @@
 
   /* ========== FOOTER ========== */
   #footer {
-    background: #0D0500;
+    background: linear-gradient(160deg, #F5EDD3, #FDF6E3 50%, #F5EDD3);
     padding: 60px 24px 40px;
     text-align: center;
     position: relative;
@@ -1119,15 +1118,15 @@
   .footer-names {
     font-family: 'Playfair Display', serif;
     font-size: clamp(22px, 5vw, 36px);
-    color: var(--gold);
+    color: var(--gold-dark);
     font-style: italic;
     margin: 16px 0 8px;
   }
 
   .footer-text {
     font-size: 13px;
-    color: var(--cream-dark);
-    opacity: 0.4;
+    color: var(--gold-dark);
+    opacity: 0.7;
     letter-spacing: 2px;
   }
 
@@ -1137,9 +1136,9 @@
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%) translateY(100px);
-    background: #1A3528;
+    background: var(--cream);
     border: 1px solid var(--gold);
-    color: var(--gold-light);
+    color: var(--gold-dark);
     padding: 14px 28px;
     font-size: 15px;
     letter-spacing: 1px;
@@ -1218,12 +1217,6 @@
   <!-- Arch -->
   <div class="w-arch"></div>
 
-  <!-- Floating petals -->
-  <div class="w-petal" style="left:8%;  width:10px;height:10px; background:var(--gold);      animation-delay:0s;   animation-duration:7s;"></div>
-  <div class="w-petal" style="left:22%; width:7px; height:7px;  background:var(--gold-dark); animation-delay:1.3s; animation-duration:9s;"></div>
-  <div class="w-petal" style="left:45%; width:12px;height:12px; background:var(--gold-light);animation-delay:0.6s; animation-duration:6s;"></div>
-  <div class="w-petal" style="left:65%; width:8px; height:8px;  background:var(--gold);      animation-delay:2.1s; animation-duration:8s;"></div>
-  <div class="w-petal" style="left:80%; width:9px; height:9px;  background:var(--gold-dark); animation-delay:0.9s; animation-duration:7.5s;"></div>
 
   <!-- Welcome content -->
   <div class="welcome-content">
@@ -1254,27 +1247,27 @@
 
 
 <!-- ===== COUPLE ===== -->
-<section id="couple" class="section-dark section-padding">
+<section id="couple" class="section-cream section-padding">
   <div class="couple-container">
     <div class="float-in">
-      <p class="section-sub light">Calon Mempelai</p>
-      <h2 class="section-title light">Pengantin Yang Berbahagia</h2>
+      <p class="section-sub dark">Calon Mempelai</p>
+      <h2 class="section-title dark">Pengantin Yang Berbahagia</h2>
       <div class="ornament-divider">
-        <div class="line light"></div>
-        <div class="diamond light"></div>
-        <div class="diamond light"></div>
-        <div class="diamond light"></div>
-        <div class="line light"></div>
+        <div class="line dark"></div>
+        <div class="diamond dark"></div>
+        <div class="diamond dark"></div>
+        <div class="diamond dark"></div>
+        <div class="line dark"></div>
       </div>
     </div>
   <div class="float-in" style="text-align:center; max-width:680px; margin: 32px auto 0; padding: 0 16px;">
-    <p style="font-family:'Scheherazade New',serif; font-size:clamp(18px,4vw,26px); color:var(--gold-light); line-height:2; direction:rtl; margin-bottom:12px;">
+    <p style="font-family:'Scheherazade New',serif; font-size:clamp(18px,4vw,26px); color:var(--gold-dark); line-height:2; direction:rtl; margin-bottom:12px;">
       رَبَّنَا هَبْ لَنَا مِنْ اَزْوَاجِنَا وَذُرِّيّٰتِنَا قُرَّةَ اَعْيُنٍ وَّاجْعَلْنَا لِلْمُتَّقِيْنَ اِمَامًا
     </p>
-    <p style="font-style:italic; font-size:13px; color:rgba(255,255,255,0.75); margin-bottom:8px;">
+    <p style="font-style:italic; font-size:13px; color:var(--text-dark); opacity:0.7; margin-bottom:8px;">
       Wal-lażīna yaqūlūna rabbanā hab lanā min azwājinā wa żurriyyātinā qurrata a'yuniw waj'alnā lil-muttaqīna imāmā(n).
     </p>
-    <p style="font-size:13px; color:rgba(255,255,255,0.6);">
+    <p style="font-size:13px; color:var(--text-dark); opacity:0.6;">
       "Ya Tuhan kami, anugerahkanlah kepada kami pasangan kami dan keturunan kami sebagai penyenang hati (kami), dan jadikanlah kami pemimpin bagi orang-orang yang bertakwa."<br>
       <strong style="color:var(--gold);">(QS. Al-Furqan: 74)</strong>
     </p>
@@ -1288,7 +1281,7 @@
         <div class="person-name">Aria Ahmad Pradana, S.E.</div>
         <div class="person-parents">
           Putra dari<br>
-          <strong style="color:var(--gold-light)">Bapak Adro'i & Ibu Sumarmi</strong>
+          <strong style="color:var(--gold-dark)">Bapak Adro'i & Ibu Sumarmi</strong>
           <div class="person-address">Pondok Brangsong Baru 004/008, Sidorejo, Kab. Kendal<br>Prov. Jawa Tengah</div>
         </div>
       </div>
@@ -1303,7 +1296,7 @@
         <div class="person-name">Silviana Suparno, A.Md.Farm</div>
         <div class="person-parents">
           Putri dari<br>
-          <strong style="color:var(--gold-light)">Bapak Suparno & Ibu Sumiati</strong>
+          <strong style="color:var(--gold-dark)">Bapak Suparno & Ibu Sumiati</strong>
           <div class="person-address">Krambilsawit, Burikan, RT/RW :004/009, Kec.Cawas, Kab.Klaten<br>Prov. Jawa Tengah</div>
         </div>
       </div>
@@ -1392,16 +1385,16 @@
 </section>
 
 <!-- ===== LOCATION / MAPS ===== -->
-<section id="location" class="section-dark section-padding">
+<section id="location" class="section-cream section-padding">
   <div class="float-in">
-    <p class="section-sub light">Lokasi Acara</p>
-    <h2 class="section-title light">Alamat & Peta</h2>
+    <p class="section-sub dark">Lokasi Acara</p>
+    <h2 class="section-title dark">Alamat & Peta</h2>
     <div class="ornament-divider">
-      <div class="line light"></div>
-      <div class="diamond light"></div>
-      <div class="diamond light"></div>
-      <div class="diamond light"></div>
-      <div class="line light"></div>
+      <div class="line dark"></div>
+      <div class="diamond dark"></div>
+      <div class="diamond dark"></div>
+      <div class="diamond dark"></div>
+      <div class="line dark"></div>
     </div>
   </div>
 
@@ -1414,7 +1407,7 @@
     </iframe>
     <div class="map-address">
       <div class="map-address-text">
-        <strong style="color:var(--gold-light); display:block; margin-bottom:4px;">Rumah Calon Mempelai Wanita</strong>
+        <strong style="color:var(--gold-dark); display:block; margin-bottom:4px;">Rumah Calon Mempelai Wanita</strong>
         Krambilsawit, Burikan, RT/RW :004/009, Kec.Cawas, Kab.Klaten<br>
         Prov. Jawa Tengah
       </div>
@@ -1892,137 +1885,7 @@
 
 
 <!-- ===== HUJAN BUNGA & DAUN ===== -->
-<canvas id="petalCanvas" style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:9999;"></canvas>
-<script>
-(function() {
-  const canvas = document.getElementById('petalCanvas');
-  const ctx = canvas.getContext('2d');
-  let W, H, petals = [];
 
-  function resize() {
-    W = canvas.width  = window.innerWidth;
-    H = canvas.height = window.innerHeight;
-  }
-  resize();
-  window.addEventListener('resize', resize);
-
-  // Warna tema hijau-gold
-  const COLORS = [
-    '#4CAF82','#2E7D52','#81C784','#A5D6A7',  // hijau
-    '#C9A84C','#E8C97A','#F5DFA0',              // gold
-    '#66BB6A','#388E3C','#1B5E3B',              // hijau tua
-    '#ffffff',                                   // putih
-  ];
-
-  function rand(min, max) { return Math.random() * (max - min) + min; }
-
-  // Tipe: 0=bunga, 1=daun, 2=kelopak kecil
-  function createPetal() {
-    const type = Math.floor(rand(0, 3));
-    return {
-      x: rand(0, W),
-      y: rand(-80, -10),
-      size: type === 1 ? rand(8, 18) : rand(5, 13),
-      color: COLORS[Math.floor(rand(0, COLORS.length))],
-      speedY: rand(1.2, 3.0),
-      speedX: rand(-0.8, 0.8),
-      rotation: rand(0, Math.PI * 2),
-      rotSpeed: rand(-0.03, 0.03),
-      swing: rand(0.3, 1.2),
-      swingOffset: rand(0, Math.PI * 2),
-      type: type,
-      opacity: rand(0.5, 0.9),
-    };
-  }
-
-  for (let i = 0; i < 55; i++) {
-    const p = createPetal();
-    p.y = rand(0, H); // distribusi awal
-    petals.push(p);
-  }
-
-  function drawFlower(ctx, p) {
-    ctx.save();
-    ctx.translate(p.x, p.y);
-    ctx.rotate(p.rotation);
-    ctx.globalAlpha = p.opacity;
-    const r = p.size;
-    // 5 kelopak bunga
-    for (let i = 0; i < 5; i++) {
-      ctx.save();
-      ctx.rotate((i * Math.PI * 2) / 5);
-      ctx.beginPath();
-      ctx.ellipse(0, -r * 0.7, r * 0.35, r * 0.6, 0, 0, Math.PI * 2);
-      ctx.fillStyle = p.color;
-      ctx.fill();
-      ctx.restore();
-    }
-    // Tengah bunga
-    ctx.beginPath();
-    ctx.arc(0, 0, r * 0.28, 0, Math.PI * 2);
-    ctx.fillStyle = '#E8C97A';
-    ctx.fill();
-    ctx.restore();
-  }
-
-  function drawLeaf(ctx, p) {
-    ctx.save();
-    ctx.translate(p.x, p.y);
-    ctx.rotate(p.rotation);
-    ctx.globalAlpha = p.opacity;
-    const r = p.size;
-    ctx.beginPath();
-    ctx.moveTo(0, -r);
-    ctx.bezierCurveTo(r * 0.8, -r * 0.5, r * 0.8, r * 0.5, 0, r);
-    ctx.bezierCurveTo(-r * 0.8, r * 0.5, -r * 0.8, -r * 0.5, 0, -r);
-    ctx.fillStyle = p.color;
-    ctx.fill();
-    // tulang daun
-    ctx.beginPath();
-    ctx.moveTo(0, -r);
-    ctx.lineTo(0, r);
-    ctx.strokeStyle = 'rgba(255,255,255,0.25)';
-    ctx.lineWidth = 0.8;
-    ctx.stroke();
-    ctx.restore();
-  }
-
-  function drawPetal(ctx, p) {
-    ctx.save();
-    ctx.translate(p.x, p.y);
-    ctx.rotate(p.rotation);
-    ctx.globalAlpha = p.opacity;
-    const r = p.size;
-    ctx.beginPath();
-    ctx.ellipse(0, 0, r * 0.5, r, 0, 0, Math.PI * 2);
-    ctx.fillStyle = p.color;
-    ctx.fill();
-    ctx.restore();
-  }
-
-  let frame = 0;
-  function animate() {
-    ctx.clearRect(0, 0, W, H);
-    frame++;
-    petals.forEach((p, i) => {
-      p.y += p.speedY;
-      p.x += p.speedX + Math.sin(frame * 0.018 + p.swingOffset) * p.swing;
-      p.rotation += p.rotSpeed;
-
-      if (p.type === 0) drawFlower(ctx, p);
-      else if (p.type === 1) drawLeaf(ctx, p);
-      else drawPetal(ctx, p);
-
-      // Reset ketika keluar layar
-      if (p.y > H + 30) {
-        petals[i] = createPetal();
-      }
-    });
-    requestAnimationFrame(animate);
-  }
-  animate();
-})();
-</script>
 
 </body>
 </html>
