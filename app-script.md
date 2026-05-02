@@ -1,0 +1,6 @@
+ID Penerapan 
+AKfycbyDtuCOPDmgwBsADcg9JwFmHrhKPNts4THopWCj4oPl3ZE6xQbqDswUsCa31MeXgwqD
+
+Aplikasi web
+URL
+https://script.google.com/macros/s/AKfycbyDtuCOPDmgwBsADcg9JwFmHrhKPNts4THopWCj4oPl3ZE6xQbqDswUsCa31MeXgwqD/exec
